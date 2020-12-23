@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: cursive;
+}
+body{
+	background-color: #ccffff;
+}
+a{
+	text-decoration: none;
+}
+.navbar-inverse{
+	background-color: #ccffff;
+	border-color: transparent;
+	padding: 25px;
+}
+.navbar-inverse .navbar-brand{
+	font-size: 30px;
+	font-weight: bold;
+	color: #000;
+}
+.navbar-inverse .navbar-brand:hover{
+	text-decoration: none;
+	color: #000;
+}
+.navbar-right .heart{
+	color: #ff0000;
+}
+.links{
+	margin-left: 80px;
+	font-size: 18px;
+}
+.links > li > a{
+	color: #000;
+}
+.carousel-inner .item{
+	margin-top: 120px;
+}
+.carousel-inner .item .text{
+	margin-top: 80px;
+}
+.carousel-inner .item .text h1{
+	font-weight: 900;
+}
