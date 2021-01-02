@@ -3,16 +3,19 @@
 	padding: 0;
 	font-family: cursive;
 }
-body{
-	background-color: #ccffff;
+.home{
+	background-color: #cce5ff;
+	height: 100vh;
 }
 a{
 	text-decoration: none;
 }
+/*--------------- navbar & caurosel ---------------*/
 .navbar-inverse{
-	background-color: #ccffff;
+	background-color: #cce5ff;
 	border-color: transparent;
 	padding: 25px;
+	margin-bottom: 10px;
 }
 .navbar-inverse .navbar-brand{
 	font-size: 30px;
@@ -28,17 +31,217 @@ a{
 }
 .links{
 	margin-left: 80px;
-	font-size: 18px;
-}
-.links > li > a{
+	font-size: 20px;
 	color: #000;
 }
 .carousel-inner .item{
-	margin-top: 120px;
+	margin-top: 50px;
 }
 .carousel-inner .item .text{
-	margin-top: 80px;
+	margin-top: 50px;
 }
 .carousel-inner .item .text h1{
 	font-weight: 900;
+}
+/*--------------- featured items ---------------*/
+.featured-items{
+	margin-top: 50px;
+}
+.featured-items .card{
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+.featured-items h2{
+	margin-top: 50px;
+	font-size: 30px;
+}
+.featured-items .card p{
+	font-size: 12px;
+}
+.featured-items .card img{
+	height: 250px;
+	width: 300px;
+}
+.featured-items .card img:hover{
+	transform: scale(1.1);
+}
+/*--------------- sofa & caurosel ---------------*/
+.furniture-items h2{
+	margin-top: 120px;
+}
+.furniture-items .item .card p{
+	font-size: 13px;
+}
+.furniture-items .card img{
+	height: 200px;
+	width: 300px;
+}
+.furniture-items .card i{
+	color: #ff0000;
+	margin-left: 30px;
+}
+.best-sofa{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.furniture-items .btn-info a{
+	border-radius: 5px;
+}
+/*--------------- bed & caurosel ---------------*/
+.best-bed{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/*--------------- Furniture tips ---------------*/
+.furniture-tips h2{
+	margin-top: 40px;
+}
+.ideas-background{
+	height: 60vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+.ideas-background .ideas{
+	color: #fff;
+	padding: 30px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 2.5rem;
+}
+.ideas-background .ideas h4{
+	color: #000;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+/*---- contacts -------*/
+/*----- contact us section ------*/
+.contactus{
+    width: 100%;
+    height: 150hv;
+    padding: 80px 0;
+    position: relative;
+    margin-top: 100px;
+}
+.contactus:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(330deg, #16c9f6 55%, #fff 0%);
+    z-index: -1; 
+}
+
+.form-button button{
+    justify-content: center;
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0 5px;
+    animation-play-state: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    background: #fff;
+}
+form:hover .form-button button{
+    background: #fff;
+    color: #50d1c0;
+}
+/*---------- search form component -----*/
+.search-form{
+	width: 40%;
+	float: right;
+}
+.search-form input{
+	border-radius: 20px;
+}
+/*------- social media icons -----*/
+.social-media{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 40px;
+    border: none;   
+}
+.social-media > a > i{
+	border: 1px solid grey;
+	padding: 10px;
+    border-radius: 50%; 
+    margin: 5px;
+    background: #00abff;
+    color: #fff;
+}
+/*------- scrollbutton -----*/
+#mybtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px; 
+}
+#mybtn:hover{
+    background: #606060;
+    
+}
+/*--------------------- footer ---------------*/
+.footer{
+	background: #00121b;
+	padding: 20px;
+	color: #fff;
+}
+/*--------------------- media queries ---------------*/
+@media only screen and (max-width: 767px){
+	.navbar-inverse .navbar-brand{
+		font-size: 20px;
+	}
+	.links{
+		margin-left: 0;
+	}
+	.carousel-inner .item .text{
+		margin: 20px;
+		
+	}
+	.carousel-inner .item .text h1{
+		font-weight: 500;
+		font-size: 30px;
+	}
+	.featured-items .card img{
+	height: 150px;
+	width: 300px;
+	}
+	.furniture-items .item .card button{
+		font-size: 10px;
+		margin: 5px;
+	}
+	.best-sofa button{
+		font-size: 10px;
+		margin: 5px;
+	}
+	.best-bed button{
+		font-size: 10px;
+		margin: 5px;
+	}
+	.furniture-items .card img{
+		height: 150px;
+	}
+	.furniture-items .card i{
+		margin-left: 0px;
+	}
+	.social-media{
+		left: 20px;
+	}
 }
